@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ /* Light background for better contrast */
+}
+#calc {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content {
+    background: #ffffff; /* Clean white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+#content form input {
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 18px; /* Increased for better readability */
+    margin: 10px;
+    cursor: pointer;
+}
+#backspace, #clear {
+    background-color: #e74c3c; /* Red for clear/backspace to emphasize action */
+    color: white;
+}
+#res {
+    padding: 10px;
+    background-color: #34495e; /* Dark background for output screen */
+    color: #ffffff; /* White text for contrast */
+    border-radius: 8px;
+}
+form #output {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+form #output input {
+    text-align: right;
+    flex: 1;
+    font-size: 30px; /* Larger font for better visibility */
+    background-color: #34495e; /* Matches the result screen */
+    color: white;
+    border: none;
+}
+form input[type='button'] {
+    background-color: #2ecc71; /* Green for number buttons */
+    color: white;
+}
+form input[type='button']:hover {
+    background-color: #27ae60; /* Slightly darker green on hover */
+}
+form input[value='='] {
+    background-color: #3498db; /* Blue for equal button */
+    color: white;
+}
+form input[value='=']:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+form input[value='%'], form input[value='/'], form input[value='x'], 
+form input[value='-'], form input[value='+'], form input[value='.'] {
+    background-color: #f39c12; /* Orange for operators */
+    color: white;
+}
+form input[value='%']:hover, form input[value='/']:hover, 
+form input[value='x']:hover, form input[value='-']:hover, 
+form input[value='+']:hover, form input[value='.']:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
